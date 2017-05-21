@@ -5,13 +5,15 @@
         <title>Mobile Weather App | Fanklin Weather | Weather data</title>
         <meta name="description" content="Weather for the town of Franklin">
         <meta name="viewport" content="width-device-width">
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="weather.css">
     </head>
     <body>
         <header>
-            <h1> &#9856; &#9861; Feeling Lucky?</h1>
-            <h2>Local Weather</h2>
-            <nav>
+            <div class="title">
+                <h1> &#9856; &#9861; Feeling Lucky?</h1>
+                <h1>Local Weather</h1>
+            </div>
+            <nav class="nav">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Franklin</a></li>
@@ -22,14 +24,7 @@
             </nav>
         </header>
         <main>
-           <div>
-               <h3>&#9728; Current Conditions</h3>
-               <h3>Wind</h3>
-               <p>1-5 MPH Southwest</p>
-               <h3>Precipitation</h3>
-               <p>0 inches</p>
-            </div>
-            <div>
+            <div class="overview">
                 <h3>&#9728; Franklin, ID</h3>
                 <div>
                     <h2>17</h2>
@@ -37,7 +32,14 @@
                 </div>
                 <h3>Sunny</h3>
             </div>
-            <div>
+           <div class="current-conditions">
+               <h3>&#9728; Current Conditions</h3>
+               <h3>Wind</h3>
+               <p>1-5 MPH Southwest</p>
+               <h3>Precipitation</h3>
+               <p>0 inches</p>
+            </div>
+            <div class="hourly">
                 <h3>&#9728; Hourly Forecast</h3>
                 <ul>
                     <li>12:00 AM : 67</li>
@@ -67,7 +69,7 @@
                 </ul>
             </div>
         </main>
-        <footer>
+        <footer class="foot">
             &copy; 2017 Derek Leavitt
             <nav>
                 <ul>
