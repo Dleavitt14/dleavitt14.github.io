@@ -18,7 +18,6 @@ figure {
 body {
     margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
     padding: 0;  /* ditto for padding  */
-    background-color: salmon;
 }
 
 main, header, footer {
