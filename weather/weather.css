@@ -1,6 +1,12 @@
 * {
-    box-sizing: border-box;    /* changes width property to total width instead of content width */
+    box-sizing: border-box;
+    /* changes width property to total width instead of content width */
+}
 
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+header, footer {
+    background-color: #A6D8DB;
 }
 
 article,
@@ -18,12 +24,73 @@ figure {
 body {
     margin: 0;  /* remove any margin from body to avoid unsightly gaps. */
     padding: 0;  /* ditto for padding  */
+    font-family: "Helvetica", Georgia, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Sansita, Times, serif;
 }
 
 main, header, footer {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+}
+
+main {
+    background-image: url(images/sunny-winter.jpg);
+    background-size: cover;
+}
+
+.temp, .current-conditions {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.current-conditions {
+    width: 95%;
+}
+
+.wind {
+    display: flex;
+}
+
+.wind-title {
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 2em;
+}
+
+.precip {
+    display: flex;
+}
+
+.precip-title {
+    margin-top: 20px;
+    margin-left: 1em;
+    margin-right: 2em;
+}
+
+.temp {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+div > h2 {
+    width: 100%;
+    padding-left: 45%;
+    padding-right: 45%;
+}
+
+.die {
+    transform: rotate(25deg);
+    display: inline-block;
 }
 
 nav ul {
@@ -36,6 +103,24 @@ nav ul {
     line-height: 10px;
     position: fixed;
     bottom: 0;
+    background-color: #F07C6C;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+}
+
+nav a:visited {
+    color: #4A4653;
+}
+
+nav a:hover {
+    color: #E7EF61;
+}
+
+nav a:active {
+    color: #A6D8DB;
 }
 
 .title h1 + h1 {

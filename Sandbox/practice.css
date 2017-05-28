@@ -1,0 +1,76 @@
+.logo {
+    height: 100px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.head-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#pic-slide {
+    height: 300px;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    margin: 5em;
+}
+
+.section-2 {
+    height: 100px;
+}
+
+.two {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.box {
+    width: 25%;
+
+}
+
+body {
+    max-width: 900px;
+    width: 80%;
+    margin: auto;
+
+}
+
+.smi {
+    width: 30%;
+}
+
+.box1 {
+    width: 25%;
+}
+
+.three {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
