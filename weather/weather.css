@@ -144,14 +144,19 @@ nav a:active {
 }
 
 @media (min-width: 650px) {
-    body {
+    header, main, footer {
         width: 80%;
         max-width: 800px;
         margin: auto;
     }
 
+    main > div {
+        flex: 1 0 30%;
+    }
+
     .hourly {
         display: initial;
+        width: 26.5%;
     }
 
     .sun {
@@ -164,9 +169,6 @@ nav a:active {
         background-image: none;
 
     }
-    main > div {
-        flex: 1 0 30%;
-    }
 
     .title {
         width: 20em;
@@ -175,6 +177,10 @@ nav a:active {
     .nav {
         position: static;
         width: 100%;
+    }
+
+    .temp {
+        width: 50%;
     }
 
     .temp, .current-conditions, .hourly, .overview {
@@ -191,11 +197,14 @@ nav a:active {
     .overview {
         background-image: url(images/sunny-winter.jpg);
         background-size: cover;
-        order: 2
+        order: 2;
+        width: 26.5%;
+
     }
     .current-conditions {
         order: 1;
         padding: 1em;
+        width: 26.5%;
     }
 
     .hourly > ul {
