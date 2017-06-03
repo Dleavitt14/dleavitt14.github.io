@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
 * {
     box-sizing: border-box;
     /* changes width property to total width instead of content width */
 }
-
-@import url('https://fonts.googleapis.com/css?family=Sansita');
 
 header, footer {
     background-color: #A6D8DB;
@@ -37,6 +37,7 @@ main, header, footer {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 main {
@@ -44,15 +45,11 @@ main {
     background-size: cover;
 }
 
-.temp, .current-conditions {
+.temp, .current-conditions, .hourly {
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
-}
-
-.current-conditions {
-    width: 95%;
 }
 
 .wind {
@@ -134,4 +131,110 @@ nav a:active {
 
 .foot {
     margin-bottom: 100px;
+}
+
+.overview {
+    display: flex;
+    flex-flow: column;
+}
+
+.sun {
+    margin-left: 37%;
+    display: none;
+}
+
+@media (min-width: 650px) {
+    body {
+        width: 80%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .hourly {
+        display: initial;
+    }
+
+    .sun {
+        display: initial;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: stretch;
+        background-image: none;
+
+    }
+    main > div {
+        flex: 1 0 30%;
+    }
+
+    .title {
+        width: 20em;
+    }
+
+    .nav {
+        position: static;
+        width: 100%;
+    }
+
+    .temp, .current-conditions, .hourly, .overview {
+        background-color: rgba(200,200,200,.6);
+        margin: .2em auto;
+        border: 1px solid;
+        border-radius: 0px;
+    }
+
+    .hourly {
+        order: 3
+    }
+
+    .overview {
+        background-image: url(images/sunny-winter.jpg);
+        background-size: cover;
+        order: 2
+    }
+    .current-conditions {
+        order: 1;
+        padding: 1em;
+    }
+
+    .hourly > ul {
+        list-style-type: none;
+    }
+
+    .hourly > ul {
+        list-style-type: none;
+        padding-left: 0;
+        max-height: 12em;
+        overflow: auto;
+    }
+    .hourly ul li {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .wind-title {
+        margin-top: 20px;
+        margin-left: 20%;
+        margin-right: 2em;
+    }
+
+    .precip-title {
+        margin-top: 20px;
+        margin-left: 1em;
+        margin-right: 20px;
+    }
+
+    nav ul li {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .city {
+        margin-left: 22%;
+    }
 }
