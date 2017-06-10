@@ -2,26 +2,35 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Responsive Navbar Page | CIT 230 | Page-redo</title>
+        <meta name="description" content="Practice using media querries and flexbox">
         <style>
             body {
                 margin: 0;
             }
 
-            .topnav {
-                display: flex;
-                flex-flow: row wrap;
+            ul.topnav {
                 list-style-type: none;
                 margin: 0;
-                padding: 2em;
+                padding: 0;
                 overflow: hidden;
                 background-color: #333;
-                }
+                display: flex;
+                flex-flow: column;
+            }
+
+            ul.topnav li {
+                width: 100%;
+            }
 
             ul.topnav li a {
+                display: block;
                 color: white;
+                text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
-                }
+            }
 
             ul.topnav li a:hover:not(.active) {
                 background-color: #111;
@@ -31,25 +40,38 @@
                 background-color: #4CAF50;
             }
 
+
+
             @media screen and (min-width: 600px){
-                .topnav {
+                ul.topnav {
                     flex-flow: row;
+                    align-content: flex-start;
                 }
 
                 ul.topnav li {
-                    width: 100%;
+                    width: 10%;
+                }
+
+                ul.topnav li.right {
+                    width: 70%;
+                }
+
+                ul.topnav li a {
+                    text-align: right;
                 }
             }
         </style>
     </head>
     <body>
         <header>
-            <ul class="topnav">
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
+            <nav>
+                <ul class="topnav">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="right"><a href="#about">About</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
             <div style="padding:0 16px;">
@@ -66,6 +88,5 @@
                 </ul>
             </nav>
         </footer>
-
     </body>
 </html>
