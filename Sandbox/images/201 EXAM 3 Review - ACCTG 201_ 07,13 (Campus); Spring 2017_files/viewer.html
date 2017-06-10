@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!-- saved from url=(0370)https://byui.brightspace.com/d2l/common/assets/pdfjs/web/viewer.html?file=%2Fcontent%2Fenforced%2F264078-Campus.2017.Spring.ACCTG201%2FCourse%2520Files%2FExam%2520Reviews%2F201%2520EXAM%25203%2520Review.pdf%3Fd2lSessionVal%3D4fvigfIrFRPEvrdF7aSINFsOv%26ou%3D264078&lang=en-us&container=d2l-fileviewer-rendered-pdf&fullscreen=d2l-fileviewer-rendered-pdf-dialog&height=778 -->
+<html dir="ltr" mozdisallowselectionprint="" moznomarginboxes=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PDF.js viewer</title>
+
+
+    <link rel="stylesheet" href="./viewer.css">
+    <link rel="stylesheet" type="text/css" href="./bsi.min(1).css">
+
+    <script src="./compatibility.js.download"></script>
+
+
+
+<!-- This snippet is used in production (included from viewer.html) -->
+<link rel="resource" type="application/l10n" href="https://byui.brightspace.com/d2l/common/assets/pdfjs/web/locale/locale.properties">
+<script src="./l10n.js.download"></script>
+<script src="./pdf.js.download"></script>
+
+
+
+    <script src="./debugger.js.download"></script>
+    <script src="./viewer.js.download"></script>
+
+    <!--<base target="_blank">--><base href="." target="_blank">
+  </head>
+
+  <body class="vui-typography" tabindex="1">
+    <div id="outerContainer" class="loadingInProgress">
+
+      <div id="sidebarContainer">
+        <div id="toolbarSidebar">
+          <div class="splitToolbarButton toggled">
+            <button id="viewThumbnail" class="toolbarButton group toggled" title="Show Thumbnails" tabindex="2" data-l10n-id="thumbs">
+               <span data-l10n-id="thumbs_label">Thumbnails</span>
+            </button>
+            <button id="viewOutline" class="toolbarButton group" title="Show Document Outline" tabindex="3" data-l10n-id="outline" disabled="">
+               <span data-l10n-id="outline_label">Document Outline</span>
+            </button>
+            <button id="viewAttachments" class="toolbarButton group hidden" title="Show Attachments" data-l10n-id="attachments" disabled="">
+               <span data-l10n-id="attachments_label">Attachments</span>
+            </button>
+          </div>
+        </div>
+        <div id="sidebarContent">
+          <div id="thumbnailView">
+          <a href="https://byui.brightspace.com/d2l/common/assets/pdfjs/web/viewer.html?file=%2Fcontent%2Fenforced%2F264078-Campus.2017.Spring.ACCTG201%2FCourse%2520Files%2FExam%2520Reviews%2F201%2520EXAM%25203%2520Review.pdf%3Fd2lSessionVal%3D4fvigfIrFRPEvrdF7aSINFsOv%26ou%3D264078&amp;lang=en-us&amp;container=d2l-fileviewer-rendered-pdf&amp;fullscreen=d2l-fileviewer-rendered-pdf-dialog&amp;height=778#page=1" title="Page 1"><div id="thumbnailContainer1" class="thumbnail selected"><div class="thumbnailSelectionRing" style="width: 100px; height: 128px;"></div></div></a><a href="https://byui.brightspace.com/d2l/common/assets/pdfjs/web/viewer.html?file=%2Fcontent%2Fenforced%2F264078-Campus.2017.Spring.ACCTG201%2FCourse%2520Files%2FExam%2520Reviews%2F201%2520EXAM%25203%2520Review.pdf%3Fd2lSessionVal%3D4fvigfIrFRPEvrdF7aSINFsOv%26ou%3D264078&amp;lang=en-us&amp;container=d2l-fileviewer-rendered-pdf&amp;fullscreen=d2l-fileviewer-rendered-pdf-dialog&amp;height=778#page=2" title="Page 2"><div id="thumbnailContainer2" class="thumbnail"><div class="thumbnailSelectionRing" style="width: 100px; height: 128px;"></div></div></a></div>
+          <div id="outlineView" class="hidden"></div>
+          <div id="attachmentsView" class="hidden"></div>
+        </div>
+      </div>  <!-- sidebarContainer -->
+
+      <div id="mainContainer">
+        <div id="loadingBar" style="width: calc(100% - 15px);" class="hidden">
+        	<div class="progress" style="height: 100%; width: 100%;">
+           	<div class="glimmer">
+            </div>
+          </div>
+        </div>
+        <div class="findbar hidden doorHanger hiddenSmallView" id="findbar">
+          <label for="findInput" class="toolbarLabel" data-l10n-id="find_label">Find:</label>
+          <input id="findInput" class="toolbarField" tabindex="6">
+          <div class="splitToolbarButton">
+            <button class="toolbarButton findPrevious" title="Find the previous occurrence of the phrase" id="findPrevious" tabindex="7" data-l10n-id="find_previous">
+              <span data-l10n-id="find_previous_label">Previous</span>
+            </button>
+            <button class="toolbarButton findNext" title="Find the next occurrence of the phrase" id="findNext" tabindex="8" data-l10n-id="find_next">
+              <span data-l10n-id="find_next_label">Next</span>
+            </button>
+          </div>
+          <input type="checkbox" id="findHighlightAll" class="toolbarField" tabindex="9">
+          <label for="findHighlightAll" class="toolbarLabel" data-l10n-id="find_highlight">Highlight all</label>
+          <input type="checkbox" id="findMatchCase" class="toolbarField" tabindex="10">
+          <label for="findMatchCase" class="toolbarLabel" data-l10n-id="find_match_case_label">Match case</label>
+          <span id="findMsg" class="toolbarLabel"></span>
+        </div>  <!-- findbar -->
+
+        <div id="secondaryToolbar" class="secondaryToolbar hidden">
+          <div id="secondaryToolbarButtonContainer" style="max-height: 644px;">
+            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView hidden" title="Switch to Presentation Mode" data-l10n-id="presentation_mode">
+              <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+            </button>
+
+            <button id="secondaryOpenFile" class="secondaryToolbarButton openFile visibleLargeView" title="Open File" data-l10n-id="open_file">
+              <span data-l10n-id="open_file_label">Open</span>
+            </button>
+
+            <button id="secondaryPrint" class="secondaryToolbarButton print visibleMediumView" title="Print" data-l10n-id="print">
+              <span data-l10n-id="print_label">Print</span>
+            </button>
+
+            <button id="secondaryDownload" class="secondaryToolbarButton download visibleMediumView" title="Download" data-l10n-id="download">
+              <span data-l10n-id="download_label">Download</span>
+            </button>
+
+            <a href="https://byui.brightspace.com/d2l/common/assets/pdfjs/web/viewer.html?file=%2Fcontent%2Fenforced%2F264078-Campus.2017.Spring.ACCTG201%2FCourse%2520Files%2FExam%2520Reviews%2F201%2520EXAM%25203%2520Review.pdf%3Fd2lSessionVal%3D4fvigfIrFRPEvrdF7aSINFsOv%26ou%3D264078&amp;lang=en-us&amp;container=d2l-fileviewer-rendered-pdf&amp;fullscreen=d2l-fileviewer-rendered-pdf-dialog&amp;height=778#page=1&amp;zoom=auto,-15,799" id="secondaryViewBookmark" class="secondaryToolbarButton bookmark visibleSmallView" title="Current view (copy or open in new window)" data-l10n-id="bookmark">
+              <span data-l10n-id="bookmark_label">Current View</span>
+            </a>
+
+            <button id="firstPage" class="secondaryToolbarButton firstPage" title="Go to First Page" tabindex="19" data-l10n-id="first_page" disabled="">
+              <span data-l10n-id="first_page_label">Go to First Page</span>
+            </button>
+            <button id="lastPage" class="secondaryToolbarButton lastPage" title="Go to Last Page" tabindex="20" data-l10n-id="last_page">
+              <span data-l10n-id="last_page_label">Go to Last Page</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="pageRotateCw" class="secondaryToolbarButton rotateCw" title="Rotate Clockwise" tabindex="21" data-l10n-id="page_rotate_cw">
+              <span data-l10n-id="page_rotate_cw_label">Rotate Clockwise</span>
+            </button>
+            <button id="pageRotateCcw" class="secondaryToolbarButton rotateCcw" title="Rotate Counterclockwise" tabindex="22" data-l10n-id="page_rotate_ccw">
+              <span data-l10n-id="page_rotate_ccw_label">Rotate Counterclockwise</span>
+            </button>
+			
+			<div class="horizontalToolbarSeparator handTool"></div>
+
+            <button id="toggleHandTool" class="secondaryToolbarButton handTool hidden" title="Enable hand tool" data-l10n-id="hand_tool_enable">
+              <span data-l10n-id="hand_tool_enable_label">Enable hand tool</span>
+            </button>
+
+            <button id="documentProperties" class="secondaryToolbarButton documentProperties hidden" title="Document Properties…" data-l10n-id="document_properties">
+              <span data-l10n-id="document_properties_label">Document Properties…</span>
+            </button>
+          </div>
+        </div>  <!-- secondaryToolbar -->
+
+        <div class="toolbar">
+          <div id="toolbarContainer">
+            <div id="toolbarViewer">
+              <div id="toolbarViewerLeft">
+                <button id="sidebarToggle" class="toolbarButton" title="Toggle Sidebar" tabindex="4" data-l10n-id="toggle_sidebar">
+                  <span data-l10n-id="toggle_sidebar_label">Toggle Sidebar</span>
+                </button>
+                <button id="viewFind" class="toolbarButton group hiddenSmallView" title="Find in Document" tabindex="5" data-l10n-id="findbar">
+                   <span data-l10n-id="findbar_label">Find</span>
+                </button>
+
+                <div class="toolbarButtonSpacer"></div>
+                <button id="zoomOut" class="toolbarButton zoomOut" title="Zoom Out" tabindex="11" data-l10n-id="zoom_out">
+                    <span data-l10n-id="zoom_out_label">Zoom Out</span>
+                </button>
+                <button id="zoomIn" class="toolbarButton zoomIn" title="Zoom In" tabindex="12" data-l10n-id="zoom_in">
+                  <span data-l10n-id="zoom_in_label">Zoom In</span>
+                </button>
+
+                <button id="zoomToFit" class="toolbarButton zoomToFit" title="Page Width" tabindex="13" data-l10n-id="page_scale">
+                    <span data-l10n-id="page_scale_width">Page Width</span>
+                  </button>
+
+                <span id="scaleSelectContainer" class="dropdownToolbarButton" style="min-width: 125px; max-width: 125px;">
+                     <select id="scaleSelect" title="Zoom" data-l10n-id="zoom" style="min-width: 147px;">
+                      <option id="pageAutoOption" title="" value="auto" selected="selected" data-l10n-id="page_scale_auto">Automatic Zoom</option>
+                      <option id="pageActualOption" title="" value="page-actual" data-l10n-id="page_scale_actual">Actual Size</option>
+                      <option id="pageFitOption" title="" value="page-fit" data-l10n-id="page_scale_fit">Page Fit</option>
+                      <option id="pageWidthOption" title="" value="page-width" data-l10n-id="page_scale_width">Page Width</option>
+                      <option id="customScaleOption" title="" value="custom"></option>
+                      <option title="" value="0.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 50 }">50%</option>
+                      <option title="" value="0.75" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 75 }">75%</option>
+                      <option title="" value="1" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 100 }">100%</option>
+                      <option title="" value="1.25" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 125 }">125%</option>
+                      <option title="" value="1.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 150 }">150%</option>
+                      <option title="" value="2" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 200 }">200%</option>
+                      <option title="" value="3" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 300 }">300%</option>
+                      <option title="" value="4" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 400 }">400%</option>
+                    </select>
+                  </span>
+
+                  <div class="toolbarButtonSpacer"></div> 
+              
+              </div>
+
+              <div id="toolbarViewerRight">
+                <button id="fullscreenMode" class="toolbarButton fullscreenMode" title="Switch to Presentation Mode" tabindex="17" data-l10n-id="presentation_mode">
+                  <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+                </button>
+
+                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView hidden" title="Switch to Presentation Mode" data-l10n-id="presentation_mode">
+                  <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+                </button>
+
+                <button id="openFile" class="toolbarButton openFile hiddenLargeView hidden" title="Open File" data-l10n-id="open_file">
+                  <span data-l10n-id="open_file_label">Open</span>
+                </button>
+
+                <button id="print" class="toolbarButton print hiddenMediumView hidden" title="Print" data-l10n-id="print">
+                  <span data-l10n-id="print_label">Print</span>
+                </button>
+
+                <button id="download" class="toolbarButton download hiddenMediumView hidden" title="Download" data-l10n-id="download">
+                  <span data-l10n-id="download_label">Download</span>
+                </button>
+                <a href="https://byui.brightspace.com/d2l/common/assets/pdfjs/web/viewer.html?file=%2Fcontent%2Fenforced%2F264078-Campus.2017.Spring.ACCTG201%2FCourse%2520Files%2FExam%2520Reviews%2F201%2520EXAM%25203%2520Review.pdf%3Fd2lSessionVal%3D4fvigfIrFRPEvrdF7aSINFsOv%26ou%3D264078&amp;lang=en-us&amp;container=d2l-fileviewer-rendered-pdf&amp;fullscreen=d2l-fileviewer-rendered-pdf-dialog&amp;height=778#page=1&amp;zoom=auto,-15,799" id="viewBookmark" class="toolbarButton bookmark hiddenSmallView hidden" title="Current view (copy or open in new window)" data-l10n-id="bookmark">
+                  <span data-l10n-id="bookmark_label">Current View</span>
+                </a>
+
+                <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="18" data-l10n-id="tools">
+                  <span data-l10n-id="tools_label">Tools</span>
+                </button>
+              </div>
+              <div class="outerCenter">
+                <div class="innerCenter" id="toolbarViewerMiddle">
+                  <button class="toolbarButton pageUp" title="Previous Page" id="previous" tabindex="14" data-l10n-id="previous" disabled="">
+                    <span data-l10n-id="previous_label">Previous</span>
+                  </button>
+
+                  <input type="number" id="pageNumber" class="toolbarField pageNumber" value="1" size="4" min="1" tabindex="15" max="2">
+                    <span id="numPages" class="toolbarLabel bold">  / 2</span>
+
+                  <button class="toolbarButton pageDown" title="Next Page" id="next" tabindex="16" data-l10n-id="next">
+                    <span data-l10n-id="next_label">Next</span>
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <menu type="context" id="viewerContextMenu">
+          <menuitem id="contextFirstPage" label="First Page" data-l10n-id="first_page" title="Go to First Page">
+          <menuitem id="contextLastPage" label="Last Page" data-l10n-id="last_page" title="Go to Last Page">
+          <menuitem id="contextPageRotateCw" label="Rotate Clockwise" data-l10n-id="page_rotate_cw" title="Rotate Clockwise">
+          <menuitem id="contextPageRotateCcw" label="Rotate Counter-Clockwise" data-l10n-id="page_rotate_ccw" title="Rotate Counterclockwise">
+        </menu>
+
+        <div id="viewerContainer" tabindex="0">
+          <div id="viewer"><div id="pageContainer1" class="page" data-page-number="1" data-loaded="true" style="width: 884px; height: 1145px;"><div class="canvasWrapper" style="width: 884px; height: 1145px;"><canvas id="page1" width="1465" height="1890" style="width: 885px; height: 1146px;"></canvas></div><div class="textLayer" style="width: 884px; height: 1145px;"><div data-canvas-width="128.94623529411766" style="left: 384.368px; top: 39.0753px; font-size: 18.0471px; font-family: sans-serif; transform: scaleX(1.03681);">Accounting 201</div><div data-canvas-width="38.093176470588226" style="left: 382.632px; top: 65.2733px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.968413);">Exam </div><div data-canvas-width="11.494588235294117" style="left: 420.462px; top: 65.2733px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.992993);">3 </div><div data-canvas-width="83.82164705882352" style="left: 431.915px; top: 65.2733px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.978785);">Review Sheet</div><div data-canvas-width="272.6105411764707" style="left: 104.152px; top: 105.761px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.00687);">The exam will be administered through I</div><div style="left: 377.05px; top: 105.761px; font-size: 15.2706px; font-family: sans-serif;">-</div><div data-canvas-width="102.23658823529411" style="left: 382.632px; top: 105.761px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(0.987177);">learn as an onli</div><div data-canvas-width="223.98898823529407" style="left: 485.044px; top: 105.761px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(0.963169);">ne exam. The exam consists of 40</div><div data-canvas-width="60.196658823529404" style="left: 712.787px; top: 105.761px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.05868);">multiple </div><div data-canvas-width="93.456" style="left: 104.152px; top: 123.114px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.01009);">choice and fill</div><div style="left: 197.896px; top: 123.114px; font-size: 15.2706px; font-family: sans-serif;">-</div><div data-canvas-width="278.7340470588236" style="left: 203.449px; top: 123.114px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(0.992002);">in the blank questions worth 1 point each.</div><div data-canvas-width="258.8059294117648" style="left: 490.944px; top: 123.114px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(0.982475);">You will be allowed to use Excel or the </div><div data-canvas-width="161.7155294117647" style="left: 104.152px; top: 140.12px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(0.997478);">calculator on the compu</div><div data-canvas-width="281.48275294117656" style="left: 265.948px; top: 140.12px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(0.992853);">ter for doing the calculations on the exam.</div><div data-canvas-width="190.56167058823527" style="left: 555.193px; top: 140.12px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.01906);">You will have a time limit of </div><div style="left: 745.8px; top: 140.12px; font-size: 15.2706px; font-family: sans-serif;">2</div><div data-canvas-width="689.3448941176468" style="left: 104.152px; top: 157.473px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(0.985571);">hours on the exam, but most of you should not need that long.  Many will be able to complete the exam </div><div data-canvas-width="121.7371294117647" style="left: 104.152px; top: 174.869px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.01696);">in around an hour</div><div data-canvas-width="32.847035294117646" style="left: 229.507px; top: 174.869px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(0.967586);">or so</div><div style="left: 262.478px; top: 174.869px; font-size: 15.2706px; font-family: sans-serif;">.</div><div data-canvas-width="410.8857176470589" style="left: 272.889px; top: 174.869px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.13899);">I recommend that you do the Self Study and Self Test</div><div data-canvas-width="86.09557647058823" style="left: 683.981px; top: 174.869px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.13944);">s found on </div><div data-canvas-width="661.5982352941178" style="left: 104.152px; top: 192.222px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.13794);">WileyPLUS under the Read, Study &amp; Practice section for each chapter as part of your </div><div data-canvas-width="653.3673882352944" style="left: 104.152px; top: 209.228px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.16216);">exam preparation. You will also find some flashcards and other tools there that you </div><div data-canvas-width="146.5518352941176" style="left: 104.152px; top: 226.581px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.22448);">might find helpful.</div><div data-canvas-width="457.91912941176486" style="left: 260.048px; top: 226.581px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.14556);">Sometimes WileyPLUS doesn’t show all of their possible re</div><div data-canvas-width="39.59663529411764" style="left: 718.339px; top: 226.581px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.13816);">view </div><div data-canvas-width="76.13915294117646" style="left: 104.152px; top: 243.934px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.16479);">questions</div><div data-canvas-width="250.88049411764698" style="left: 184.013px; top: 243.934px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.14262);">under Read, Study, and Practice</div><div data-canvas-width="303.319694117647" style="left: 435.038px; top: 243.934px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.12369);">, so here is a link that you can go to the </div><div data-canvas-width="670.3330117647064" style="left: 104.152px; top: 260.94px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.1424);">publisher’s website that will give you full access to practice questions.  They are called </div><div data-canvas-width="277.6651058823531" style="left: 104.152px; top: 278.293px; font-size: 15.2706px; font-family: sans-serif; transform: scaleX(1.14783);">Self Tests and Additional Self Tests.</div><div data-canvas-width="162.3541176470588" style="left: 104.152px; top: 314.346px; font-size: 17.3529px; font-family: sans-serif; transform: scaleX(0.931937);">http://bcs.wiley.com/he</div><div style="left: 266.642px; top: 314.346px; font-size: 17.3529px; font-family: sans-serif;">-</div><div data-canvas-width="421.12117647058835" style="left: 272.889px; top: 314.346px; font-size: 17.3529px; font-family: sans-serif; transform: scaleX(0.9312);">bcs/Books?action=index&amp;itemId=1118162285&amp;bcsId=7509</div><div data-canvas-width="69.00917647058823" style="left: 104.152px; top: 349.007px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.13213);">Chapter 5</div><div data-canvas-width="24.627294117647054" style="left: 179.849px; top: 349.007px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.22762);">(20</div><div data-canvas-width="77.31082352941175" style="left: 207.613px; top: 349.007px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.1519);">Questions)</div><div data-canvas-width="546.0068235294116" style="left: 156.249px; top: 364.857px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.953709);">Know the classifications of the new accounts of this chapter and understand the rules of debit</div><div data-canvas-width="77.26917647058823" style="left: 703.069px; top: 364.857px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.936052);">s and credits </div><div data-canvas-width="634.8677647058823" style="left: 156.249px; top: 381.169px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.943202);">and normal balances for each one of them.  You should also know where the accounts appear in the financial </div><div data-canvas-width="68.03741176470587" style="left: 156.249px; top: 397.134px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.948324);">statements.</div><div data-canvas-width="450.32964705882347" style="left: 156.249px; top: 413.142px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.958905);">Know the difference between the perpetual and periodic inventory systems.  </div><div data-canvas-width="181.66447058823522" style="left: 606.905px; top: 413.142px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.949679);">Which system requires a more </div><div data-canvas-width="405.6839999999997" style="left: 156.249px; top: 429.454px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.917701);">detailed set of records?  When is COGS calculated under each system?</div><div data-canvas-width="231.44658823529403" style="left: 156.249px; top: 445.418px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.956236);">Know the difference between the single</div><div style="left: 388.185px; top: 445.418px; font-size: 13.8824px; font-family: sans-serif;">-</div><div data-canvas-width="50.01811764705882" style="left: 392.697px; top: 445.418px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.939315);">step and</div><div data-canvas-width="49.101882352941175" style="left: 445.797px; top: 445.418px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.02664);">multiple</div><div style="left: 495.108px; top: 445.418px; font-size: 13.8824px; font-family: sans-serif;">-</div><div data-canvas-width="292.2512941176471" style="left: 499.62px; top: 445.418px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.95415);">step income statements, including the format and </div><div data-canvas-width="299.7061176470587" style="left: 156.249px; top: 461.73px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.947441);">content.  Know what accounts go in which sections.</div><div data-canvas-width="146.4449411764706" style="left: 156.249px; top: 477.695px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.978492);">Know about credit terms</div><div data-canvas-width="9.023529411764704" style="left: 302.78px; top: 477.695px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.976119);">--</div><div data-canvas-width="464.29529411764696" style="left: 311.803px; top: 477.695px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.953698);">how do they work; be able to compute cash discounts; what for example would </div><div data-canvas-width="281.6729411764705" style="left: 156.249px; top: 493.66px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.965726);">3/15,n/45 mean; how do things such as transpo</div><div data-canvas-width="348.73858823529395" style="left: 437.815px; top: 493.66px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.95026);">rtation, merchandise returns and allowances, etc. affect the </div><div data-canvas-width="199.8225882352941" style="left: 156.249px; top: 509.971px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.952108);">amount of the available discounts.</div><div data-canvas-width="592.1656470588234" style="left: 156.249px; top: 525.936px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.960559);">Be able to journalize the transactions for a merchandising firm using both the perpetual and periodic </div><div data-canvas-width="346.2814117647059" style="left: 156.249px; top: 542.277px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.961136);">inventory systems from the perspective of both the buyer a</div><div data-canvas-width="281.46470588235286" style="left: 503.091px; top: 542.277px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.950067);">nd the seller.  This includes making calculations </div><div data-canvas-width="624.0950588235295" style="left: 156.249px; top: 558.241px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.956127);">when returns and discounts are involved.  This includes the entries for shipping charges paid by either the </div><div data-canvas-width="119.8602352941176" style="left: 156.249px; top: 574.206px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.953136);">buyer or the seller.   </div><div data-canvas-width="464.71176470588244" style="left: 276.36px; top: 574.206px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.02614);">(Read carefully as to whether you are the buyer or the seller in a problem </div><div data-canvas-width="26.959529411764702" style="left: 741.636px; top: 574.206px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.997966);">and </div><div data-canvas-width="453.63364705882356" style="left: 156.249px; top: 590.518px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.037);">whether you are using the perpetual or the periodic inventory system.)  </div><div data-canvas-width="578.366588235294" style="left: 156.249px; top: 606.483px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.949311);">Know the difference between FOB shipping point and FOB destination.  For these two terms, know </div><div data-canvas-width="51.96164705882351" style="left: 735.042px; top: 606.483px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.935338);">who has </div><div data-canvas-width="147.99976470588234" style="left: 156.249px; top: 622.794px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.954225);">to pay the shipping charg</div><div data-canvas-width="13.076598039215684" style="left: 304.168px; top: 622.794px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.89203);">es</div><div data-canvas-width="448.24729411764724" style="left: 319.786px; top: 622.794px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.966579);">and how they are recorded under both the periodic and perpetual inventory </div><div data-canvas-width="50.71223529411763" style="left: 156.249px; top: 638.759px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.926182);">systems.</div><div data-canvas-width="493.2816470588233" style="left: 156.249px; top: 654.753px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.931039);">Know the difference between a sales return, a sales allowance, and a sales discount.  </div><div data-canvas-width="309.0072941176469" style="left: 156.249px; top: 671.064px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.94974);">Know the difference between a purchases return, a p</div><div data-canvas-width="273.8571764705881" style="left: 465.579px; top: 671.064px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.92672);">urchases allowance, and a purchases discount. </div><div data-canvas-width="210.40094117647052" style="left: 156.249px; top: 687.029px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.933902);">Know how net sales are calculated.  </div><div data-canvas-width="628.2458823529411" style="left: 156.249px; top: 703.341px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.938039);">Know how net purchases, cost of goods purchased, and cost of goods sold are calculated under the periodic </div><div data-canvas-width="104.81176470588234" style="left: 156.249px; top: 719.306px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.970568);">inventory system.</div><div data-canvas-width="206.40282352941176" style="left: 156.249px; top: 735.27px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.96236);">Know how to calculate gross profit.</div><div data-canvas-width="67.1350588235294" style="left: 156.249px; top: 751.582px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.915848);">Be able to c</div><div data-canvas-width="327.37364705882356" style="left: 223.26px; top: 751.582px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.970996);">alculate the profit margin ratio and the gross profit rate.</div><div data-canvas-width="69.34235294117647" style="left: 52.0935px; top: 782.975px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.13759);">Chapter 6</div><div style="left: 128.481px; top: 782.975px; font-size: 13.8824px; font-family: sans-serif;">(</div><div data-canvas-width="18.39411764705882" style="left: 134.728px; top: 782.975px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.19142);">20</div><div data-canvas-width="77.31082352941175" style="left: 156.249px; top: 782.975px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.1519);">Questions)</div><div data-canvas-width="613.7665882352941" style="left: 156.249px; top: 798.825px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.949681);">Know the difference between FOB shipping point and FOB destination.  For these two terms, know when </div><div data-canvas-width="386.6790588235295" style="left: 156.249px; top: 815.137px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.963843);">title transfers from the seller to the buyer, who has to pay the ship</div><div data-canvas-width="252.36729411764696" style="left: 543.35px; top: 815.137px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.948059);">ping charges, and which party includes the </div><div data-canvas-width="486.4515294117648" style="left: 156.249px; top: 831.102px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.945132);">goods on their balance sheet when the goods are in transit at the end of the period?</div><div data-canvas-width="42.160705882352936" style="left: 156.249px; top: 847.067px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.993585);">Know t</div><div data-canvas-width="445.24870588235297" style="left: 198.59px; top: 847.067px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.956966);">he factor which determines whether or not goods should be included in a ph</div><div data-canvas-width="146.76423529411764" style="left: 644.416px; top: 847.067px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.97226);">ysical count of inventory.</div><div data-canvas-width="70.00870588235294" style="left: 156.249px; top: 863.378px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.975708);">Know what </div><div data-canvas-width="29.888705882352937" style="left: 226.384px; top: 863.378px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.922614);">costs</div><div data-canvas-width="73.2155294117647" style="left: 259.007px; top: 863.378px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.968184);">are included</div><div data-canvas-width="11.522352941176468" style="left: 335.403px; top: 863.378px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.06658);">in</div><div data-canvas-width="157.495294117647" style="left: 349.633px; top: 863.378px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.953845);">the inventory of a business</div><div data-canvas-width="235.08376470588234" style="left: 510.032px; top: 863.378px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.964163);">including how to treat shipping charges </div><div data-canvas-width="166.86588235294113" style="left: 156.249px; top: 879.343px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.948536);">incurred as the buyer and as</div><div data-canvas-width="54.26611764705882" style="left: 326.033px; top: 879.343px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.963538);">the seller</div><div style="left: 380.521px; top: 879.343px; font-size: 13.8824px; font-family: sans-serif;">.</div><div data-canvas-width="337.5494117647059" style="left: 156.249px; top: 895.684px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.951524);">Know how consigned goods affect a company's inventory.</div><div data-canvas-width="494.46164705882353" style="left: 156.249px; top: 911.649px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.938778);">Understand the difference between the FIFO, LIFO, and average inventory methods.  </div><div data-canvas-width="128.96705882352938" style="left: 651.357px; top: 911.649px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.971867);">Know which financial </div><div data-canvas-width="62.34564705882352" style="left: 156.249px; top: 927.96px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.962051);">statement </div><div data-canvas-width="437.1830588235295" style="left: 218.748px; top: 927.96px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.952281);">(cost of goods sold on the income statement or ending inventory on the bal</div><div data-canvas-width="70.31411764705882" style="left: 656.216px; top: 927.96px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.920494);">ance sheet) </div><div data-canvas-width="22.114588235294114" style="left: 726.365px; top: 927.96px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.955216);">the </div><div data-canvas-width="35.56658823529411" style="left: 748.577px; top: 927.96px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.960269);">oldest</div><div data-canvas-width="47.102823529411765" style="left: 156.249px; top: 943.925px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.938941);">and the </div><div data-canvas-width="42.160705882352936" style="left: 203.449px; top: 943.925px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.958674);">newest</div><div data-canvas-width="32.87341176470587" style="left: 248.595px; top: 943.925px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.906803);">costs </div><div data-canvas-width="24.91882352941176" style="left: 281.566px; top: 943.925px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.07729);">will </div><div data-canvas-width="196.56023529411752" style="left: 306.598px; top: 943.925px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.91644);">appear on under FIFO and LIFO.   </div><div data-canvas-width="34.344941176470584" style="left: 156.249px; top: 959.89px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.989189);">Know</div><div data-canvas-width="38.815058823529405" style="left: 193.731px; top: 959.89px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.986595);">which </div><div data-canvas-width="45.17317647058823" style="left: 232.631px; top: 959.89px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.975747);">method</div><div data-canvas-width="122.58117647058822" style="left: 280.872px; top: 959.89px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.93458);">gives the most and le</div><div data-canvas-width="20.39317647058823" style="left: 403.456px; top: 959.89px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.911549);">ast </div><div data-canvas-width="22.12847058823529" style="left: 423.932px; top: 959.89px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.955816);">net </div><div data-canvas-width="279.24352941176477" style="left: 446.144px; top: 959.89px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.975531);">income in inflationary and deflationary periods.</div><div data-canvas-width="104.6451764705882" style="left: 156.249px; top: 976.201px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.941893);">Be able to work a </div><div data-canvas-width="117.2503529411765" style="left: 261.089px; top: 976.201px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.993189);">perpetual inventory</div><div data-canvas-width="146.3894117647058" style="left: 381.215px; top: 976.201px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.934896);">record for FIFO and LIFO</div><div data-canvas-width="79.00447058823528" style="left: 530.855px; top: 976.201px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.975249);">to determine </div><div data-canvas-width="172.29388235294113" style="left: 610.028px; top: 976.201px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.962373);">the ending inventory and the </div><div data-canvas-width="162.36799999999997" style="left: 156.249px; top: 992.169px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.935328);">cost of goods sold numbers.</div><div data-canvas-width="137.90729411764698" style="left: 156.249px; top: 1008.48px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.930846);">Be able to calculate the </div><div data-canvas-width="100.64705882352939" style="left: 294.06px; top: 1008.48px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.988125);">ending inventory</div><div data-canvas-width="24.904941176470583" style="left: 397.903px; top: 1008.48px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.921911);">and </div><div data-canvas-width="103.75670588235295" style="left: 422.891px; top: 1008.48px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.92739);">cost of goods sold</div><div data-canvas-width="115.76494117647054" style="left: 529.814px; top: 1008.48px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.961778);">numbers under the </div><div data-canvas-width="93.0395294117647" style="left: 645.804px; top: 1008.48px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.964929);">periodic system</div><div data-canvas-width="54.044" style="left: 741.983px; top: 1008.48px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.910195);">for FIFO, </div><div data-canvas-width="184.56588235294114" style="left: 156.249px; top: 1024.48px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.923584);">LIFO, and the average methods.</div><div data-canvas-width="326.5684705882353" style="left: 346.856px; top: 1024.48px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.95549);">Read carefully to determine if the question is asking for </div><div data-canvas-width="123.3724705882353" style="left: 673.569px; top: 1024.48px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.951677);">the ones left (ending </div><div data-canvas-width="278.8548235294116" style="left: 156.249px; top: 1040.44px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.953671);">inventory) or the ones sold (cost of goods sold).</div><div data-canvas-width="421.981882352941" style="left: 156.249px; top: 1056.76px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.939786);">Understand that FIFO and LIFO are cost flow assumptions on paper and </div><div data-canvas-width="49.448941176470576" style="left: 578.793px; top: 1056.76px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.91615);">DO NOT</div><div data-canvas-width="45.700705882352935" style="left: 631.546px; top: 1056.76px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.925369);">have to </div><div data-canvas-width="99.81411764705882" style="left: 677.387px; top: 1056.76px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.944321);">match the actual </div><div data-canvas-width="169.65623529411764" style="left: 156.249px; top: 1072.72px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.943782);">physical movement of goods.</div><div class="endOfContent"></div></div><div class="annotationLayer"><section data-annotation-id="22R" class="linkAnnotation" style="transform: matrix(1.44608, 0, 0, 1.44608, 0, 0); transform-origin: -69.75px -217.13px 0px; left: 69.75px; top: 217.13px; width: 412.74px; height: 13.8px;"><a title="http://bcs.wiley.com/he-bcs/Books?action=index&amp;itemId=1118162285&amp;bcsId=7509" href="http://bcs.wiley.com/he-bcs/Books?action=index&amp;itemId=1118162285&amp;bcsId=7509" target="_blank" rel="noreferrer"></a></section></div></div><div id="pageContainer2" class="page" data-page-number="2" data-loaded="true" style="width: 884px; height: 1145px;"><div class="canvasWrapper" style="width: 884px; height: 1145px;"><canvas id="page2" width="1465" height="1890" style="width: 885px; height: 1146px;"></canvas></div><div class="textLayer" style="width: 884px; height: 1145px;"><div data-canvas-width="332.8849411764706" style="left: 156.249px; top: 38.8679px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.974628);">Know how an error in ending inventory would affect the </div><div data-canvas-width="104.10376470588237" style="left: 489.208px; top: 38.8679px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.930492);">cost of goods sold</div><div data-canvas-width="200.69717647058818" style="left: 596.146px; top: 38.8679px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.942398);">and the net income on the income </div><div data-canvas-width="59.13882352941175" style="left: 156.249px; top: 54.8615px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.970306);">statement</div><div data-canvas-width="114.94588235294115" style="left: 218.748px; top: 54.8615px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.980252);">for the current year</div><div style="left: 334.015px; top: 54.8615px; font-size: 13.8824px; font-family: sans-serif;">.</div><div data-canvas-width="422.9397647058824" style="left: 342.692px; top: 54.8615px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.95549);">Then, because of that error in ending inventory, next year the beginning </div><div data-canvas-width="127.21788235294112" style="left: 156.249px; top: 70.8262px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.983499);">inventory will be off.  </div><div data-canvas-width="412.97223529411735" style="left: 283.648px; top: 70.8262px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.957544);">If the inventory at the end of the second year is correctly calculated (th</div><div data-canvas-width="92.85905882352941" style="left: 697.169px; top: 70.8262px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.962989);">e error is in the </div><div data-canvas-width="147.7776470588235" style="left: 156.249px; top: 87.138px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.987173);">beginning inventory only</div><div data-canvas-width="102.4795294117647" style="left: 306.945px; top: 87.138px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.962502);">and is either over</div><div data-canvas-width="36.135764705882345" style="left: 409.703px; top: 87.138px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.9557);">stated</div><div data-canvas-width="87.45882352941176" style="left: 448.921px; top: 87.138px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.977103);">or understated</div><div data-canvas-width="18.72729411764705" style="left: 536.408px; top: 87.138px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.01217);">) w</div><div data-canvas-width="202.3908235294117" style="left: 555.193px; top: 87.138px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.961984);">hat effect will there now be on the </div><div data-canvas-width="36.12188235294117" style="left: 757.6px; top: 87.138px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.900457);">assets</div><div data-canvas-width="25.252" style="left: 156.249px; top: 103.103px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.934758);">and </div><div data-canvas-width="38.85670588235293" style="left: 181.584px; top: 103.103px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.968632);">stockh</div><div data-canvas-width="80.1705882352941" style="left: 220.484px; top: 103.103px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.980295);">olders’ equity</div><div data-canvas-width="106.33882352941175" style="left: 303.474px; top: 103.103px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.02071);">at the end of that</div><div data-canvas-width="75.78376470588235" style="left: 413.174px; top: 103.103px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.00224);">second year</div><div style="left: 488.861px; top: 103.103px; font-size: 13.8824px; font-family: sans-serif;">?</div><div data-canvas-width="232.6404705882353" style="left: 156.249px; top: 119.414px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.957336);">Know how the Lower of Cost or Market </div><div data-canvas-width="39.82847058823529" style="left: 389.226px; top: 119.414px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.939222);">(LCM) </div><div data-canvas-width="63.85882352941175" style="left: 428.791px; top: 119.414px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.00969);">rule works</div><div data-canvas-width="88.50000000000001" style="left: 492.679px; top: 119.414px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.93273);">, why it is used,</div><div data-canvas-width="113.69647058823527" style="left: 584.346px; top: 119.414px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.969429);">and what the word </div><div style="left: 698.21px; top: 119.414px; font-size: 13.8824px; font-family: sans-serif;">“</div><div data-canvas-width="42.14682352941176" style="left: 703.069px; top: 119.414px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.993575);">Market</div><div style="left: 745.453px; top: 119.414px; font-size: 13.8824px; font-family: sans-serif;">”</div><div data-canvas-width="41.20282352941176" style="left: 753.783px; top: 119.414px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.905226);">means </div><div data-canvas-width="36.82988235294117" style="left: 156.249px; top: 135.379px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.01575);">in this</div><div data-canvas-width="46.88070588235294" style="left: 195.813px; top: 135.379px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.964483);">context.</div><div data-canvas-width="112.86352941176469" style="left: 156.249px; top: 151.344px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.931641);">Be able to calculate</div><div data-canvas-width="27.08447058823529" style="left: 272.195px; top: 151.344px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(1.00259);">both</div><div data-canvas-width="320.47411764705885" style="left: 302.086px; top: 151.344px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.982732);">the inventory turnover ratio and the days in inventory.</div><div data-canvas-width="144.57082352941174" style="left: 628.769px; top: 151.344px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.965838);">Know what things could </div><div data-canvas-width="240.69223529411758" style="left: 156.249px; top: 167.699px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.959897);">cause the inventory turnover to increase.</div><div data-canvas-width="275.425882352941" style="left: 156.249px; top: 183.664px; font-size: 13.8824px; font-family: sans-serif; transform: scaleX(0.952095);">Know what a LIFO reserve is and how it works.</div><div class="endOfContent"></div></div></div></div>
+        </div>
+
+        <div id="errorWrapper" hidden="true">
+          <div id="errorMessageLeft">
+            <div id="errorMessageContainer">
+                 <span id="errorMessage"></span>
+            </div>
+            <button id="errorShowMore" class="vui-button" data-l10n-id="error_more_info" hidden="true">More Information</button>
+            <button id="errorShowLess" class="vui-button" data-l10n-id="error_less_info" hidden="true">Less Information</button>
+          </div>
+          <div id="errorMessageRight">
+            <button id="errorClose" class="vui-button" data-l10n-id="error_close">Close</button>
+          </div>
+          <div class="clearBoth"></div>
+          <textarea id="errorMoreInfo" hidden="true" readonly="readonly"></textarea>
+        </div>
+      </div> <!-- mainContainer -->
+
+      <div id="overlayContainer" class="hidden">
+        <div id="passwordOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <p id="passwordText" data-l10n-id="password_label">Enter the password to open this PDF file.</p>
+            </div>
+            <div class="row">
+              <!-- The type="password" attribute is set via script, to prevent warnings in Firefox for all http:// documents. -->
+              <input id="password" class="toolbarField">
+            </div>
+            <div class="buttonRow">
+              <button id="passwordSubmit" class="vui-button"><span data-l10n-id="password_ok">OK</span></button>
+              <button id="passwordCancel" class="vui-button"><span data-l10n-id="password_cancel">Cancel</span></button>
+            </div>
+          </div>
+        </div>
+        <div id="documentPropertiesOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <span data-l10n-id="document_properties_file_name">File name:</span> <p id="fileNameField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_file_size">File size:</span> <p id="fileSizeField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_title">Title:</span> <p id="titleField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_author">Author:</span> <p id="authorField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_subject">Subject:</span> <p id="subjectField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_keywords">Keywords:</span> <p id="keywordsField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creation_date">Creation Date:</span> <p id="creationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_modification_date">Modification Date:</span> <p id="modificationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creator">Creator:</span> <p id="creatorField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_producer">PDF Producer:</span> <p id="producerField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_version">PDF Version:</span> <p id="versionField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_page_count">Page Count:</span> <p id="pageCountField">-</p>
+            </div>
+            <div class="buttonRow">
+              <button id="documentPropertiesClose" class="overlayButton"><span data-l10n-id="document_properties_close">Close</span></button>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- overlayContainer -->
+
+    </div> <!-- outerContainer -->
+    <div id="printContainer"></div>
+<div id="mozPrintCallback-shim" hidden="">
+  <style>
+@media print {
+  #printContainer div {
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+}
+  </style>
+  <style scoped="">
+#mozPrintCallback-shim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
+
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#mozPrintCallback-shim[hidden] {
+  display: none;
+}
+@media print {
+  #mozPrintCallback-shim {
+    display: none;
+  }
+}
+
+#mozPrintCallback-shim .mozPrintCallback-dialog-box {
+  display: inline-block;
+  margin: -50px auto 0;
+  position: relative;
+  top: 45%;
+  left: 0;
+  min-width: 220px;
+  max-width: 400px;
+
+  padding: 9px;
+
+  border: 1px solid hsla(0, 0%, 0%, .5);
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+  background-color: #474747;
+
+  color: hsl(0, 0%, 85%);
+  font-size: 16px;
+  line-height: 20px;
+}
+#mozPrintCallback-shim .progress-row {
+  clear: both;
+  padding: 1em 0;
+}
+#mozPrintCallback-shim progress {
+  width: 100%;
+}
+#mozPrintCallback-shim .relative-progress {
+  clear: both;
+  float: right;
+}
+#mozPrintCallback-shim .progress-actions {
+  clear: both;
+}
+  </style>
+  <div class="mozPrintCallback-dialog-box">
+    <!-- TODO: Localise the following strings -->
+    Preparing document for printing...
+    <div class="progress-row">
+      <progress value="0" max="100"></progress>
+      <span class="relative-progress">0%</span>
+    </div>
+    <div class="progress-actions">
+      <input type="button" value="Cancel" class="mozPrintCallback-cancel">
+    </div>
+  </div>
+</div>
+
+  
+
+
+<input id="fileInput" class="fileInput" type="file"></body></html>

@@ -1,0 +1,37 @@
+
+table, th, td {
+    border: solid black;
+}
+
+.headline-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.body-font {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.color-swatch {
+    border: 1px solid;
+    border-radius: 10px;
+    flex: 0 1 25%;
+}
+.color-swatch__color {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+}
+.color-swatch__primary {
+    background-color: #00C26F;
+}
+.color-swatch__secondary {
+    background-color: #036BBA;
+}
+.color-swatch__description {
+    padding: .5em;
+}
