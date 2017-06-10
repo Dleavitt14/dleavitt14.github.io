@@ -27,10 +27,10 @@ table, th, td {
     border-radius: 10px 10px 0 0;
 }
 .color-swatch__primary {
-    background-color: #00C26F;
+    background-color: #142AFC;
 }
 .color-swatch__secondary {
-    background-color: #036BBA;
+    background-color: #F40006;
 }
 .color-swatch__description {
     padding: .5em;
