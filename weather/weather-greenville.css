@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    /* changes width property to total width instead of content width */
+}
+
+main {
+    background-image: url(images/sunny-winter.jpg);
+}
+
+header, footer {
+    background-color: #F40006;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;   /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+
+main, header, footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+.nav {
+    line-height: 30px;
+    bottom: 0;
+    background-color: #F40006;
+    width: 100%;
+
+
+}
+
+nav a:link {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: #E7EF61;
+}
+
+nav a:active {
+    color: green;
+}
+
+.title-small {
+    justify-content: center;
+    background-color: #F40006;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.sunny {
+    display: none;
+}
+
+.hourly {
+    display: none;
+}
+
+.title-large {
+    display: none;
+}
+
+.overview, .current-conditions {
+    color: #142AFC;
+}
+
+.temp, .current {
+    background-color: rgba(200,200,200,.6);
+    margin: .5em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.temp {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
