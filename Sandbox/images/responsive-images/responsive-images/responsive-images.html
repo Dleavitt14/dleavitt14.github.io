@@ -19,7 +19,7 @@
             }
             .media-box picture {
                 flex: 1 1 400px;
-                
+
             }
             .media-box img {
 /*                width: 100%;*/
@@ -27,7 +27,7 @@
             .media-box > div {
                 flex: 1 1 50vw;
             }
-            
+
         </style>
     </head>
     <body>
@@ -36,20 +36,20 @@
            <nav>
                <ul>
                    <li><a href="index.html">Home</a> </li>
-                   
+
                </ul>
            </nav>
        </header>
        <main>
         <!-- image 1 -->
          <figure>
-             <img src="images/image-1-canyon-sq.jpg" alt="Grand canyon river shot">
+             <img src="images/image-1-canyon-sq-800.jpg" size="(max-width: 400px) 100vw, 100vw" alt="Grand canyon river shot" srcset="images/image-1-canyon-sq-400.jpg 400w, images/image-1-canyon-sq-800.jpg 800w, images/image-1-canyon-sq-1600.jpeg 1600w">
              <figcaption>Image 1: a Grand Canyon Colorado river shot</figcaption>
          </figure>
          <!--Image 2 -->
           <section class="media-box">
               <picture>
-                                       
+                  <source sizes="35vw" srcset="images/image-2-little-colorado-banner-830px.jpg 830w, images/image-2-little-colorado-banner-1660px.jpg 1660w"
                   <img src="images/image-2-little-colorado.jpg" alt="The Little Colorado River" >
               </picture>
               <div><h2>The Little Colorado</h2>
@@ -60,7 +60,7 @@
        <footer>
            &copy; 2017 Bro Thompson
        </footer>
-        
+
     </body>
-    
+
 </html>

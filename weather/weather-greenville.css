@@ -4,7 +4,7 @@
 }
 
 main {
-    background-image: url(images/sunny-winter.jpg);
+    background-image: url(images/sunset.jpg);
 }
 
 header, footer {
@@ -86,7 +86,7 @@ nav a:active {
     display: none;
 }
 
-.overview, .current-conditions {
+.overview, .current-conditions, .hourly {
     color: #142AFC;
 }
 
@@ -103,4 +103,94 @@ nav a:active {
     display: flex;
     flex-flow: column;
     justify-content: center;
+}
+.center{
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+
+    header, main, footer {
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    main {
+        flex-flow: row;
+    }
+
+    .title-large {
+        display: block;
+        border-bottom: 2px solid;
+        width: 100%;
+        text-align: center;
+        background-color: #142AFC;
+        color: white;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .title-small {
+        display: none;
+    }
+
+    .sunny {
+        display: inline;
+    }
+
+    .hourly {
+        display: block;
+        background-color: rgba(200,200,200,.6);
+        margin: .5em auto;
+        border: 1px solid;
+        border-radius: 5px;
+        padding-left: 1em;
+        padding-right: 1em;
+        order: 3;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .overview {
+        order: 2;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .current-conditions {
+        order: 1;
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    .hourly > ul {
+        list-style-type: none;
+        padding-left: 0;
+        max-height: 15em;
+        overflow: auto;
+    }
+    .hourly ul li {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .temp {
+        background-color: rgba(200,200,200,.6);
+        margin: .5em auto;
+        border: 1px solid;
+        border-radius: 110px;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    footer {
+        font-size: 1.5em;
+    }
+
+    footer nav {
+        width: 100%;
+    }
 }

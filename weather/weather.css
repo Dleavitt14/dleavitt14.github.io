@@ -217,6 +217,7 @@ nav a:active {
         max-height: 12em;
         overflow: auto;
     }
+
     .hourly ul li {
         display: flex;
         justify-content: space-around;
