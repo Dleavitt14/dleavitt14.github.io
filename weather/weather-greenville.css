@@ -118,6 +118,8 @@ nav a:active {
 
     main {
         flex-flow: row;
+        background-image: url(images/sunset-large.jpg);
+
     }
 
     .title-large {
