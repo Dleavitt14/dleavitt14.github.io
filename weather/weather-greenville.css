@@ -11,12 +11,12 @@ header, footer {
     background-color: #F40006;
 }
 
-h1. h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
-
 body {
     font-family: 'Oxygen', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
 }
 
 article,
