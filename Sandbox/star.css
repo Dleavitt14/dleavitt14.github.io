@@ -1,0 +1,46 @@
+
+header, footer, main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+header, footer {
+    background-color: aqua
+}
+
+main {
+    background-color: greenyellow
+}
+
+footer {
+    height: 5em;
+    padding-top: 1em;
+}
+
+div ul li {
+    list-style-type: none;
+    border-style: double;
+    border-width: thick;
+    height: 2em;
+    padding: 1em;
+
+}
+
+.part1 {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+#ships-names {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.part2 {
+    border-style: double;
+    border-width: thick;
+    padding: 1em;
+    margin-bottom: 1em;
+}

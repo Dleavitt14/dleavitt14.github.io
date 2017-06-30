@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    /* changes width property to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;   /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Mogra', cursive;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+
+}
+
+main {
+    background-color: #278727;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+header, footer {
+    background-color: #1D6565;
+}
+
+main, header, footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+.nav {
+    line-height: 20px;
+    font-size: 1.5em;
+    border-style: double;
+    margin-bottom: 1em;
+    padding-right: 1em;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #278727;
+}
+
+nav a:visited {
+    color: aqua;
+}
+
+nav a:hover {
+    color: #E7EF61;
+}
+
+nav a:active {
+    color: crimson;
+}
+
+.nav-bar {
+    margin-left: 1em;
+}
+
+.title {
+    margin-bottom: -20px
+}
+
+#grammy-pic, #family-pic, #grandpa-pic {
+    display: flex;
+}
+
+#family-pic {
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#grammy-pic {
+    display: none;
+}
+
+#grandpa-pic {
+    display: none;
+}
+
+
+.home-pictures {
+    width: 450px;
+}
+
+.home-pictures1 {
+    width: 350px;
+}
+
+.home-pictures2 {
+    width: 650px;
+}
+
