@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <title>Responsive Navbar Page | CIT 230 | Page-redo</title>
+        <title>Family Reunion Site | CIT 230 | Final Project</title>
         <meta name="description" content="Practice using media querries and flexbox">
         <link rel="stylesheet" type="text/css" href="final.css">
         <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
@@ -11,23 +11,23 @@
     </head>
     <body>
         <header>
-            <h1 class="title">Leavitt</h1>
+            <h1 class="title1">Leavitt</h1>
             <h1>Family Reunions</h1>
             <nav class="nav">
                 <ul>
-                    <li class="nav-bar"><a href="#">Yellowstone</a></li>
-                    <li class="nav-bar"><a href="#">Telluride, CO</a></li>
-                    <li class="nav-bar"><a href="#">Council, ID</a></li>
-                    <li class="nav-bar"><a href="#">Mexico</a></li>
-                    <li class="nav-bar"><a href="#">Lake Powell</a></li>
+                    <li class="nav-bar"><a href="/finalYellowstone.html">Yellowstone</a></li>
+                    <li class="nav-bar"><a href="/finalTelluride.html">Telluride, CO</a></li>
+                    <li class="nav-bar"><a href="/finalCouncil.html">Council, ID</a></li>
+                    <li class="nav-bar"><a href="/finalMexico.html">Mexico</a></li>
+                    <li class="nav-bar"><a href="/finalLake-Powell.html">Lake Powell</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
+            <section id="large">
                 <div id="grammy-pic">
                     <img class="home-pictures1" src = "/Sandbox/final-images/grammy.jpg" alt = "grandma-leavitt">
-                    <h3>Grandma Leavitt</h3>
+                    <h3 id="gram">Grandma Leavitt</h3>
                 </div>
                 <div id="family-pic">
                     <img class="home-pictures2" src = "/Sandbox/final-images/family-picture.jpg" alt = "Family">
@@ -35,32 +35,39 @@
                 </div>
                 <div id="grandpa-pic">
                     <img class="home-pictures1" src = "/Sandbox/final-images/grandpa.jpg" alt = "grandpa-leavitt">
-                    <h3>Grandpa Leavitt</h3>
+                    <h3 id="gramp">Grandpa Leavitt</h3>
                 </div>
             </section>
             <section>
-                <div>
-                    <div>
-                        <img class="home-pictures" src = "/Sandbox/final-images/yellowstone-waterfall.jpg" alt = "yellowstone waterfall">
-                        <h3>Yellowstone</h3>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="/Sandbox/final-images/yellowstone-waterfall.jpg" alt = "yellowstone waterfall" style="width:100%">
+                        <div class="text">Yellowstone</div>
                     </div>
-                    <div>
-                        <img class="home-pictures" src = "/Sandbox/final-images/mexico-sunset.jpg" alt = "mexico senset">
-                        <h3>Mexico</h3>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="/Sandbox/final-images/mexico-sunset.jpg" alt = "mexico senset" style="width:100%">
+                        <div class="text">Mexico</div>
                     </div>
-                    <div>
-                        <img class="home-pictures" src = "/Sandbox/final-images/starky-bridge.jpg" alt = "bridge in council">
-                        <h3>Council, ID</h3>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 5</div>
+                        <img src = "/Sandbox/final-images/starky-bridge.jpg" alt = "bridge in council" style="width:100%">
+                        <div class="text">Council, ID</div>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <img class="home-pictures" src = "/Sandbox/final-images/telluride-mountains.jpg" alt = "mountains in colorado">
-                        <h3>Telluride, CO</h3>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img src = "/Sandbox/final-images/telluride-mountains.jpg" alt = "mountains in colorado" style="width:100%">
+                        <div class="text">Telluride, CO</div>
                     </div>
-                    <div>
-                        <img class="home-pictures" src = "/Sandbox/final-images/lake-powell-scenery.jpg" alt = "Family">
-                        <h3>Lake Powell</h3>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img src = "/Sandbox/final-images/lake-powell-scenery.jpg" alt = "Family" style="width:100%">
+                        <div class="text">Lake Powell</div>
                     </div>
                 </div>
             </section>
@@ -69,9 +76,11 @@
             <nav>
                 <ul>
                     <li><a href="/index.html">Temporary Home Page</a></li>
+                    <li><a href="/index1.html">Home</a></li>
                 </ul>
             </nav>
             &copy; 2017 Derek Leavitt
         </footer>
+        <script src="Sandbox/final.js"></script>
     </body>
     </html>
