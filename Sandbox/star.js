@@ -9,7 +9,7 @@ function getShipDetails(urlNew) {
         //stuff that should happen after the request is done.
         console.log(data);
 
-        var details = document.getElementById('ships-info');
+        var details = document.getElementById('name');
 
         //make sure list is empty
         details.innerHTML = "";
@@ -20,7 +20,7 @@ function getShipDetails(urlNew) {
             text += data[i] + "\n";
         }
 
-        document.getElementById('ships-info').innerHTML = text;
+        document.getElementById('name').innerHTML = text;
     })
 }
 
@@ -48,7 +48,7 @@ function fetchShips() {
         var shipListElement = document.getElementById('ships-names');
 
         //make sure list is empty
-        shipListElement.innerHTML = "";
+        shipListElement.innerHTML = " ";
 
         //loop through ships
         results.forEach(function(ship) {
@@ -67,7 +67,17 @@ function fetchShips() {
             link.addEventListener("click", function(event){
                 event.preventDefault();
                 getShipDetails(ship.url);
+
+                var stuff = document.getElementById("stuff");
+                stuff.items.display = 'block';
+                document.getElementById('ships-names').innerHTML = ship.name;
+
+                document.getElementById('model').innerHTML = ship.model;
+
+
             })
+
+           // document.getElementById('name').innerHTML = ship.name;
         });
 });
 

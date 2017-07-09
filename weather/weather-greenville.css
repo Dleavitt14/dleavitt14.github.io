@@ -82,7 +82,7 @@ nav a:active {
     padding-right: 2em;
 }
 
-.sunny {
+#sunny {
     display: none;
 }
 
@@ -90,7 +90,7 @@ nav a:active {
     display: none;
 }
 
-.title-large {
+#title-large {
     display: none;
 }
 
@@ -112,7 +112,10 @@ nav a:active {
     flex-flow: column;
     justify-content: center;
 }
-.center{
+#center1  {
+    text-align: center;
+}
+#center2{
     text-align: center;
 }
 
@@ -147,8 +150,9 @@ nav a:active {
         display: none;
     }
 
-    .sunny {
+    #sunny {
         display: inline;
+        align-content: center;
     }
 
     .hourly {
@@ -204,3 +208,5 @@ nav a:active {
         width: 100%;
     }
 }
+
+
