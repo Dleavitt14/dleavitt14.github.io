@@ -188,6 +188,27 @@ footer nav ul li {
     padding-bottom: 2em;
 }
 
+#memoriesYellowstone {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#memoriesYellowstone li {
+    list-style-type: none;
+    width: 45%;
+    padding: 1em;
+    border-style:ridge;
+    border-radius: 10%;
+    margin: 1em;
+    font-size: .75em;
+}
+
+.mem {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 h1 {
     font-size: 3em;
 }
@@ -253,5 +274,11 @@ h1 {
         display: flex;
         width: 45%
     }
+
+    #memoriesYellowstone li {
+        font-size: 1em;
+        width: 30%;
+    }
+
 
 }

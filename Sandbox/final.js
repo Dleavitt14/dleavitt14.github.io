@@ -47,13 +47,13 @@ function fetchData() {
         console.log(council.Memories[0]);
         console.log(lakePowell.Memories[0]);
 
-        for(var i = 0; i < 7; i++) {
+        for(let i = 0; i < 7; i++) {
             var listItem = document.createElement('li');
             listItem.innerHTML = yellowstone.Memories[i];
             memoryYellowstone.appendChild(listItem);
         }
 
-        for(var i = 0; i < 7; i++) {
+        for(let i = 0; i < 7; i++) {
             var listItem = document.createElement('li');
             listItem.innerHTML = mexico.Memories[i];
             memoryMexico.appendChild(listItem);
