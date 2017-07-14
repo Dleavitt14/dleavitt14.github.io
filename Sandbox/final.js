@@ -47,34 +47,40 @@ function fetchData() {
         console.log(council.Memories[0]);
         console.log(lakePowell.Memories[0]);
 
-        for(let i = 0; i < 7; i++) {
-            var listItem = document.createElement('li');
-            listItem.innerHTML = yellowstone.Memories[i];
-            memoryYellowstone.appendChild(listItem);
+        if (memoryYellowstone) {
+            for(let i = 0; i < 9; i++) {
+                var listItem = document.createElement('li');
+                listItem.innerHTML = yellowstone.Memories[i];
+                memoryYellowstone.appendChild(listItem);
+            }
         }
-
-        for(let i = 0; i < 7; i++) {
-            var listItem = document.createElement('li');
-            listItem.innerHTML = mexico.Memories[i];
-            memoryMexico.appendChild(listItem);
+        else if (memoryMexico) {
+            for(let i = 0; i < 9; i++) {
+                var listItem = document.createElement('li');
+                listItem.innerHTML = mexico.Memories[i];
+                memoryMexico.appendChild(listItem);
+            }
         }
-
-        for(var i = 0; i < 7; i++) {
-            var listItem = document.createElement('li');
-            listItem.innerHTML = telluride.Memories[i];
-            memoryTelluride.appendChild(listItem);
+        else if (memoryTelluride){
+            for(var i = 0; i < 10; i++) {
+                var listItem = document.createElement('li');
+                listItem.innerHTML = telluride.Memories[i];
+                memoryTelluride.appendChild(listItem);
+            }
         }
-
-        for(var i = 0; i < 6; i++) {
-            var listItem = document.createElement('li');
-            listItem.innerHTML = lakePowell.Memories[i];
-            memoryLakePowell.appendChild(listItem);
+        else if (memoryLakePowell) {
+            for(var i = 0; i < 8; i++) {
+                var listItem = document.createElement('li');
+                listItem.innerHTML = lakePowell.Memories[i];
+                memoryLakePowell.appendChild(listItem);
+            }
         }
-
-        for(var i = 0; i < 7; i++) {
-            var listItem = document.createElement('li');
-            listItem.innerHTML = council.Memories[i];
-            memoryCouncil.appendChild(listItem);
+        else {
+            for(var i = 0; i < 10; i++) {
+                var listItem = document.createElement('li');
+                listItem.innerHTML = council.Memories[i];
+                memoryCouncil.appendChild(listItem);
+            }
         }
 
     })
