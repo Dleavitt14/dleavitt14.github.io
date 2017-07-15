@@ -1,42 +1,91 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <title>Temporary Home Page | CIT 230 class | Frontend Development</title>
-        <meta name="description" content="Short description of the site">
-        <meta name="viewport" content="width-device-width">
+        <title>Family Reunion Site | CIT 230 | Final Project</title>
+        <meta name="description" content="Practice using media querries and flexbox">
+        <link rel="stylesheet" type="text/css" href="final.css">
+        <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>Temporary Home Page</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="mobile-analysis.html">Mobile Browsing Analysis</a></li>
-                    <li><a href="weather/weather-planning-page.html">Weather Planning Page</a></li>
-                    <li><a href="/weather/franklin-wireframe.html">Franklin Weather</a></li>
-                    <li><a href="/weather/greenville-page.html">Greenville Weather</a></li>
-                    <li><a href="/Sandbox/final-project-proposal-1.html">Final Project Proposal 1</a></li>
-                    <li><a href="/Sandbox/responsive-navbar.html">Responsive Navbar Activity</a></li>
-                    <li><a href="/Sandbox/choose-adventure.html">Choose Advanture</a></li>
-                    <li><a href="/Sandbox/star-wars.html">Star Wars API Activity</a></li>
-                    <li><a href="/weather/jsonweather-html/jsonweather-html/index.html">Weather API Activity</a></li>
-                    <li><a href="/index1.html">Final Project</a></li>
+                    <li class="home-link"><a href="/index.html">Home</a></li>
+                </ul>
+            </nav>
+            <h1 class="title1">Leavitt</h1>
+            <h1>Family Reunions</h1>
+            <nav class="nav">
+                <ul>
+                    <li class="nav-bar"><a href="/finalYellowstone.html">Yellowstone</a></li>
+                    <li class="nav-bar"><a href="/finalTelluride.html">Telluride, CO</a></li>
+                    <li class="nav-bar"><a href="/finalCouncil.html">Council, ID</a></li>
+                    <li class="nav-bar"><a href="/finalMexico.html">Mexico</a></li>
+                    <li class="nav-bar"><a href="/finalLake-Powell.html">Lake Powell</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h2>Part One</h2>
-                <p>I was born in Colorado Springs, Colorado</p>
-            <h2>Part Two</h2>
-                <p>I moved to Alexandrea, Virginia when I was 1 year old</p>
-            <h2>Part Three</h2>
-                <p>I moved to Eagle, Idaho when I was 3 years old</p>
-            <h2>Part Four</h2>
-                <p>I moved to Middleton, Idaho when I was in 4th grade</p>
+            <section id="large">
+                <div id="grammy-pic">
+                    <img class="home-pictures1" src = "/Sandbox/final-images/grammy.jpg" alt = "grandma-leavitt">
+                    <h3 id="gram">Grandma Leavitt</h3>
+                </div>
+                <div id="family-pic">
+                    <img class="home-pictures2" src = "/Sandbox/final-images/family-picture.jpg" alt = "Family">
+                    <h2>The Leavitt's</h2>
+                </div>
+                <div id="grandpa-pic">
+                    <img class="home-pictures1" src = "/Sandbox/final-images/grandpa.jpg" alt = "grandpa-leavitt">
+                    <h3 id="gramp">Grandpa Leavitt</h3>
+                </div>
+            </section>
+            <section>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 5</div>
+                        <img class="slide-w" src="/Sandbox/final-images/yellowstone-waterfall.jpg" alt = "yellowstone waterfall">
+                        <div class="text">Yellowstone</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 5</div>
+                        <img class="slide-w" src="/Sandbox/final-images/mexico-sunset.jpg" alt = "mexico senset">
+                        <div class="text">Mexico</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 5</div>
+                        <img class="slide-w" src = "/Sandbox/final-images/starky-bridge.jpg" alt = "bridge in council">
+                        <div class="text">Council, ID</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 5</div>
+                        <img class="slide-w" src = "/Sandbox/final-images/telluride-mountains.jpg" alt = "mountains in colorado">
+                        <div class="text">Telluride, CO</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 5</div>
+                        <img class="slide-w" src = "/Sandbox/final-images/lake-powell-scenery.jpg" alt = "Family">
+                        <div class="text">Lake Powell</div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
+            <nav>
+                <ul>
+                    <li><a href="/indexh.html">Temporary Home Page</a></li>
+                    <li><a href="/Sandbox/final-project-proposal-1.html">Planning Page</a></li>
+                </ul>
+            </nav>
             &copy; 2017 Derek Leavitt
         </footer>
+        <script src="Sandbox/final.js"></script>
     </body>
-</html>
+    </html>
