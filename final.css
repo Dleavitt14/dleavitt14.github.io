@@ -189,7 +189,7 @@ footer nav ul li {
     padding-bottom: 2em;
 }
 
-#memoriesYellowstone, #memoriesMexico, #memoriesCouncil, #memoriesLake-powell, #memoriesTelluride {
+#memoriesYellowstone, #memoriesMexico, #memoriesCouncil, #memoriesLake-powell, #memoriesTelluride, #memoriesHagerman {
     display: flex;
     flex-flow: row wrap;
 }
