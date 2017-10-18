@@ -81,7 +81,7 @@ function fetchData() {
         else if (memoryHagerman) {
             for(var i = 0; i < 8; i++) {
                 var listItem = document.createElement('li');
-                listItem.innerHTML = council.Memories[i];
+                listItem.innerHTML = hagerman.Memories[i];
                 memoryHagerman.appendChild(listItem);
             }
         }
