@@ -82,7 +82,7 @@ function fetchData() {
             for(var i = 0; i < 8; i++) {
                 var listItem = document.createElement('li');
                 listItem.innerHTML = council.Memories[i];
-                memoryCouncil.appendChild(listItem);
+                memoryHagerman.appendChild(listItem);
             }
         }
         else {
