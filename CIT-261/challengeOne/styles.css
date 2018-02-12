@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.secondEvent {
+    border-top: 5px solid black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p, a {
+    color: white;
+    text-align: center;
+}
