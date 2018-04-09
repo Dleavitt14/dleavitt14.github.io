@@ -59,8 +59,8 @@ body {
 }
 
 .level {
-    width: 150px;
-    height: 100px;
+    width: 40vw;
+    height: 40vw;
     border: 2px solid black;
     border-radius: 20px;
     margin: 5px;
