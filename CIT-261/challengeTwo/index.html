@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eventing Levels</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cross Country Levels in Eventing</h1>
+    </header>
+    <main>
+        <div class="list">
+            <div class="level">
+                <button ontouchend="showInfo('beginnerNovice')" >Beginner<br>Novice</button>
+            </div>
+            <div class="level">
+                <button ontouchend="showInfo('novice')" >Novice</button>
+            </div>
+            <div class="level">
+                <button ontouchend="showInfo('training')" >Training</button>
+            </div>
+            <div class="level">
+                <button ontouchend="showInfo('prelim')" >Prelim</button>
+            </div>
+            <div class="level">
+                <button ontouchend="showInfo('intermediate')" >Intermediate</button>
+            </div>
+            <div class="level">
+                <button ontouchend="showInfo('advanced')" >Advanced</button>
+            </div>
+        </div>
+        <section id="mover" ontouchstart="disappear(this)">
+            <section id="blurredBackground"></section>
+            <div id="infoDisplay" ontouchstart="doNothing(event)"></div> 
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; Derek Leavitt 2018</p>
+        <p><a href="../../indexh.html">Portfolio</a></p>    
+    </footer>
+</body>
+
+</html>

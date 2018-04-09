@@ -1,0 +1,91 @@
+<doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<script type="text/javascript">
+		function disapear(sectionToHide){
+			sectionToHide.style.left="400px"
+		}
+		function showImage(){
+			var sectionToShow = document.querySelector("#mover")
+			sectionToShow.style.left="0px"
+		}
+		function doNothing(theEvent){
+			theEvent.stopPropagation()
+		}
+	</script>
+
+	<style type="text/css">
+		/*
+			Turn off scrolling.
+		*/
+		html{
+		  overflow: hidden;
+		}
+
+		/*
+			Fix the width and height to match the screen.
+		*/
+		body{
+			background-image: url("heaven.jpg");
+			background-repeat: no-repeat;
+			height: 100vh;
+        	width: 100vw;
+		}
+		/*
+			Blur the background but not the child image.
+		*/
+		#blurredBackground{
+			width: 100%;
+			height: 100%;
+        	background-color: black;
+        	opacity: .5;
+		}
+		/*
+			Contains everything we want to move.
+		*/
+		#mover{
+			position: absolute;
+			top: 0px;
+			left: 400px;
+			height: 100vh;
+        	width: 100vw;
+        	transition: left 1.5s;
+		}
+
+		.imageDisplay{
+			position: absolute;
+			top:150px;
+			padding-left: 40px;
+		}
+		/*
+			Keep the footer at the bottom of the page.
+		*/
+		footer {
+		   position:absolute;
+		   bottom:0px;
+		   width:100%;
+		   height:60px;
+		   background-color:rgb(12,12,9);
+		}
+		.controlIcon{
+			margin: 10px;
+			background-color: white;
+			float: right;
+		}
+	</style>
+
+</head>
+<body>
+		<footer>
+			<img class="controlIcon" src="familyIcon.png" ontouchstart="showImage()">
+		</footer>
+		<!-- I've put the stuff to display after the footer so I don't have to mess with the z-index.-->
+		<section  id="mover" ontouchstart="disapear(this)">
+			<section id="blurredBackground"></section>
+			<img class="imageDisplay" src="small_family.jpg" ontouchstart="doNothing(event)">
+		</section>
+</body>
+
+</html>

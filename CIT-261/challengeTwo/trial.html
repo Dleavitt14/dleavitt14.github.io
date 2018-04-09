@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eventing Levels trial</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cross Country Levels in Eventing</h1>
+    </header>
+    <main>
+        <div class="list">
+            <div class="level a" id="lb">
+                <button ontouchend="expandBox('lb')" >Beginner Novice</button>
+            </div>
+            <div class="level b" id="ln">
+                <button ontouchend="expandBox('ln')" >Novice</button>
+            </div>
+            <div class="level" id="lt">
+                <button ontouchend="expandBox('lt')" >Training</button>
+            </div>
+            <div class="level" id="lp">
+                <button ontouchend="expandBox('lp')" >Prelim</button>
+            </div>
+            <div class="level" id="li">
+                <button ontouchend="expandBox('li')" >Intermediate</button>
+            </div>
+            <div class="level" id="la">
+                <button ontouchend="expandBox('la')" >Advanced</button>
+            </div>
+        </div>
+        <div class="back" id="la">
+                <button ontouchend="toHome('la')" >Home</button>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; Derek Leavitt 2018</p>
+        <p><a href="../../indexh.html">Portfolio</a></p>
+    </footer>
+</body>
+
+</html>

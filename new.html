@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+<!-- <link href="index.css" rel="stylesheet" type="text/css" />-->
+    <script>
+        function getJSON(url) {
+            return fetch(url)
+            .then(function (response) {
+                return response.json();
+            });
+        }
+        
+        function getData() {
+            var url = "https://raw.githubusercontent.com/ftcemployees/Employee-Site/master/modules/common/MOCK_DATA.json";
+            
+            getJSON(url).then(function(data) {
+                console.log(data);
+                
+                var states = [];
+                
+                for(var i = 0; i < data.length; i++) {
+                    states.push(data[i].state); 
+                }
+                
+                console.log(states);
+                
+                var count = 1
+                var results = "";
+                
+                for(var j = 0;j < states.length; j++) {
+                    if( states[j] === "" ){j++}
+                    //if( states[j] === "" ){j++}
+                    else {
+                    
+                    for(var k = 1;k < states.length; k++) {
+                        if (states[j] === states[j+k]) {
+                            count++;
+                            states[j+k] = ""; 
+                        }
+                        
+                    }
+                    if( states[j] === "" ){break}
+                    results = states[j]+": "+count+"<br>";
+                    document.write(results);
+                    count = 1;
+                    }
+                }
+                console.log(results);
+                // document.getElementById(list).innerHTML(results);
+            })
+        }
+      getData();
+    </script>
+      
+  </head>
+  <body>
+  </body>
+</html>
