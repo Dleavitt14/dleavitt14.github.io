@@ -41,7 +41,7 @@ body {
 
 #infoDisplay {
     position: absolute;
-    top: 150px;
+    top: 50px;
     padding-left: 55px;
 }
 
@@ -60,7 +60,7 @@ body {
 
 .level {
     width: 40vw;
-    height: 40vw;
+    height: 35vw;
     border: 2px solid black;
     border-radius: 20px;
     margin: 5px;

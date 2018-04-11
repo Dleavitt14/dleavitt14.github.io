@@ -60,7 +60,7 @@ function getBeginnerNovice() {
     photo.setAttribute("class", "photo");
     space.appendChild(photo);
     
-    var list = ["jump", "run", "play"]
+    var list = ["Small logs", "Water crossings", "Small cabins and barrels"];
     var infoList = document.createElement("UL");
     infoList.setAttribute("class", "infoList");
     
@@ -92,7 +92,7 @@ function getNovice() {
     photo.setAttribute("class", "photo");
     space.appendChild(photo);
     
-    var list = ["jump", "run", "play"]
+    var list = ["Tables", "Ditches", "Larger jumps"];
     var infoList = document.createElement("UL");
     infoList.setAttribute("class", "infoList");
     
@@ -125,7 +125,7 @@ function getTraining() {
     photo.setAttribute("class", "photo");
     space.appendChild(photo);
     
-    var list = ["jump", "run", "play"]
+    var list = ["Small corners", "Simple combinations", "Coffins"];
     var infoList = document.createElement("UL");
     infoList.setAttribute("class", "infoList");
     
@@ -157,7 +157,7 @@ function getPrelim() {
     photo.setAttribute("class", "photo");
     space.appendChild(photo);
     
-    var list = ["jump", "run", "play"]
+    var list = ["Small ditch and walls", "Larger tables", "Medium complex combinations"];
     var infoList = document.createElement("UL");
     infoList.setAttribute("class", "infoList");
     
@@ -189,7 +189,7 @@ function getIntermediate() {
     photo.setAttribute("class", "photo");
     space.appendChild(photo);
     
-    var list = ["jump", "run", "play"]
+    var list = ["Large wide tables", "Complex combinations", "Banks and jumps into water"];
     var infoList = document.createElement("UL");
     infoList.setAttribute("class", "infoList");
     
@@ -221,7 +221,7 @@ function getAdvanced() {
     photo.setAttribute("class", "photo");
     space.appendChild(photo);
     
-    var list = ["jump", "run", "play"]
+    var list = ["Enourmous tables and jumps", "Large jumps with terrain", "Very narrow jumps"];
     var infoList = document.createElement("UL");
     infoList.setAttribute("class", "infoList");
     
