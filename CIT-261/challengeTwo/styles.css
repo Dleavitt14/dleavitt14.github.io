@@ -60,7 +60,7 @@ body {
 
 .level {
     width: 40vw;
-    height: 35vw;
+    height: 25vw;
     border: 2px solid black;
     border-radius: 20px;
     margin: 5px;
@@ -71,8 +71,7 @@ body {
 
 button {
     font-size: 1.1em;
-    border: 1px solid;
-    
+    border: 1px solid;    
 }
 
 .photo {
